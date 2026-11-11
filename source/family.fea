@@ -2,7 +2,9 @@
 
 languagesystem DFLT dflt;
 languagesystem dev2 dflt;
+languagesystem dev2 MAR;
 languagesystem deva dflt;
+languagesystem deva MAR;
 
 table head {
   FontRevision 1.000;
@@ -208,8 +210,10 @@ feature half {
       sub dvYA   dvVirama by dvY;
       sub dvRA   dvVirama by dvEyelash;
       sub dvLA   dvVirama by dvL;
+      sub dvLA.mar dvVirama by dvL;
       sub dvVA   dvVirama by dvV;
       sub dvSHA  dvVirama by dvSH;
+      sub dvSHA.mar dvVirama by dvSH;
       sub dvSSA  dvVirama by dvSS;
       sub dvSA   dvVirama by dvS;
       sub dvHA   dvVirama by dvH;
@@ -906,6 +910,7 @@ feature blws {
 
   sub dvDA  dvmvR by dvDA_mvR;
   sub dvSHA dvmvR by dvSHA_mvR;
+  sub dvSHA.mar dvmvR by dvSHA_mvR;
   sub dvHA  dvmvR by dvHA_mvR;
 
 } blws;
